@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stunning Waffle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">Stunning Waffle</a>
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__cta">Get Started</button>
+      <button class="nav__toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__container">
+      <span class="hero__badge">Welcome</span>
+      <h1 class="hero__title">Build Something <span class="highlight">Stunning</span> Today</h1>
+      <p class="hero__subtitle">A modern, fast, and beautiful platform designed to help you create extraordinary experiences — without the hassle.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Get Started Free</a>
+        <a href="#features" class="btn btn--secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="hero__blob hero__blob--1"></div>
+    <div class="hero__blob hero__blob--2"></div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="section__container">
+      <p class="section__label">Features</p>
+      <h2 class="section__title">Everything you need to succeed</h2>
+      <p class="section__subtitle">Packed with powerful tools to take your project from idea to launch.</p>
+      <div class="features__grid">
+        <div class="card">
+          <div class="card__icon">&#9889;</div>
+          <h3 class="card__title">Lightning Fast</h3>
+          <p class="card__text">Optimized for performance so your users get instant results every single time.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">&#128274;</div>
+          <h3 class="card__title">Secure by Default</h3>
+          <p class="card__text">Built with security best practices baked in — your data stays safe and private.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">&#127775;</div>
+          <h3 class="card__title">Beautiful Design</h3>
+          <p class="card__text">Pixel-perfect components that look great on any device, any screen size.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">&#128200;</div>
+          <h3 class="card__title">Powerful Analytics</h3>
+          <p class="card__text">Gain insights into how your users interact with your product in real time.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">&#127760;</div>
+          <h3 class="card__title">Global Scale</h3>
+          <p class="card__text">Deploy anywhere in the world and reach your audience without latency issues.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">&#128101;</div>
+          <h3 class="card__title">Team Collaboration</h3>
+          <p class="card__text">Invite your team, set roles, and work together seamlessly from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="section__container about__layout">
+      <div class="about__visual">
+        <div class="about__shape"></div>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__number">10K+</span>
+            <span class="stat__label">Happy Users</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">99.9%</span>
+            <span class="stat__label">Uptime</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">50+</span>
+            <span class="stat__label">Integrations</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__content">
+        <p class="section__label">About Us</p>
+        <h2 class="section__title">We're on a mission to make the web better</h2>
+        <p class="about__text">We believe that great software should be accessible to everyone. Our team of passionate engineers and designers work tirelessly to build tools that are intuitive, reliable, and genuinely useful.</p>
+        <p class="about__text">From startups to enterprises, thousands of teams trust us to power their most critical workflows.</p>
+        <a href="#contact" class="btn btn--primary">Meet the Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="section__container cta-banner__inner">
+      <h2 class="cta-banner__title">Ready to get started?</h2>
+      <p class="cta-banner__text">Join thousands of users already building with Stunning Waffle.</p>
+      <a href="#contact" class="btn btn--white">Start for Free</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="section__container contact__layout">
+      <div class="contact__info">
+        <p class="section__label">Contact</p>
+        <h2 class="section__title">Get in touch</h2>
+        <p class="contact__text">Have a question or want to work together? We'd love to hear from you. Fill out the form and we'll get back to you within 24 hours.</p>
+        <div class="contact__details">
+          <p>&#128231; hello@stunningwaffle.com</p>
+          <p>&#128205; San Francisco, CA</p>
+          <p>&#128222; +1 (555) 000-0000</p>
+        </div>
+      </div>
+      <form class="contact__form" onsubmit="handleSubmit(event)">
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required />
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form__group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <p class="form__success" id="formSuccess">Thanks! We'll be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <span class="nav__logo">Stunning Waffle</span>
+        <p>Making the web a more beautiful place, one pixel at a time.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Stunning Waffle. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
